@@ -19,24 +19,24 @@ This repository contains a simple **Library Management System** created using **
 ## Tables Overview
 
 ### Books Table
-sql
+'''sql
 BookID INT PRIMARY KEY AUTO_INCREMENT,
 Title VARCHAR(255) NOT NULL,
 Author VARCHAR(100),
 Publisher VARCHAR(100),
 YearPublished INT
-
+'''
 
 ### Members Table
-sql
+'''sql
 MemberID INT PRIMARY KEY AUTO_INCREMENT,
 Name VARCHAR(100),
 Email VARCHAR(100) UNIQUE,
 JoinDate DATE
-
+'''
 
 ### IssuedBooks Table
-sql
+'''sql
 IssueID INT PRIMARY KEY AUTO_INCREMENT,
 BookID INT,
 MemberID INT,
@@ -44,7 +44,7 @@ IssueDate DATE,
 ReturnDate DATE,
 FOREIGN KEY (BookID) REFERENCES Books(BookID),
 FOREIGN KEY (MemberID) REFERENCES Members(MemberID)
-
+'''
 
 ---
 
