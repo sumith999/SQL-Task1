@@ -1,4 +1,4 @@
-Library Management System - SQL Task
+# Library Management System - SQL Task
 
 This repository contains a simple **Library Management System** created using **MySQL**.
 
